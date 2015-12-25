@@ -1,10 +1,10 @@
 #!/bin/bash
-databasePass="Metallica21"
+databasePass="pass"
 triggerCreateDB="/var/log/databasesetup"
 sudo locale-gen "en_US.UTF-8"
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-rootPass="Metallica21"
+rootPass="pass"
 
 echo mysql-server mysql-server/root_password password "$rootPass" | sudo debconf-set-selections
 echo mysql-server mysql-server/root_password_again password "$rootPass" | sudo debconf-set-selections
